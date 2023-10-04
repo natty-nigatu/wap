@@ -23,6 +23,13 @@ body {
 a {
   text-decoration: none;
   color: darkslateblue;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+li {
   line-height: 25px;
 }
 

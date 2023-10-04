@@ -1,0 +1,29 @@
+body {
+  font-family: Verdana;
+}
+
+h1 {
+  color: darkslateblue;
+  font-size: 40px;
+}
+
+h2 {
+  color: darkslategray;
+  font-family: Georgia;
+}
+
+span {
+  font-size: 25px;
+}
+
+.happy {
+  color: darkorange;
+}
+
+.obsession {
+  color: darkgreen;
+}
+
+p::first-letter {
+  font-size: 1.5em;
+}

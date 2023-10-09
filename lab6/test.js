@@ -24,37 +24,37 @@ describe("Book Tests", function () {
   });
 
   it("Add Book ", function () {
-    assert.equal(
-      JSON.stringify([
+    assert.deepEqual(
+      [
         ...testBooks,
         { title: "Test Title", author: "Test Author", libraryID: 9999 },
-      ]),
-      JSON.stringify(addBook("Test Title", "Test Author", 9999))
+      ],
+      addBook("Test Title", "Test Author", 9999)
     );
   });
 
   it("Get Titles", function () {
-    assert.equal(
-      JSON.stringify([
+    assert.deepEqual(
+      [
         "Mockingjay: The Final Book of The Hunger Games",
         "The Road Ahead",
         "The Road Ahead",
         "Walter Isaacson",
-      ]),
-      JSON.stringify(getTitles())
+      ],
+      getTitles()
     );
   });
 
   it("Find Books", function () {
-    assert.equal(
-      JSON.stringify([
+    assert.deepEqual(
+      [
         {
           title: "Mockingjay: The Final Book of The Hunger Games",
           author: "Suzanne Collins",
           libraryID: 3257,
         },
-      ]),
-      JSON.stringify(findBooks("final"))
+      ],
+      findBooks("final")
     );
   });
 });
